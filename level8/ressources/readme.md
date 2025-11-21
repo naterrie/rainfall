@@ -5,14 +5,16 @@ the level8 binary does some strange things with memory we just need to make sure
 ### USAGE
 
 ```bash
-./level6 [input]
+./level8
+[input]
+...
 ```
 
 ## SOLUTION
 To solve this level, run the binary and use thoses instructions:
 
 ```bash
-./level6
+./level8
 auth
 service
 login
@@ -23,7 +25,7 @@ login
 or
 
 ```bash
-./level6
+./level8
 auth
 service
 service
