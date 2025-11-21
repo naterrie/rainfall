@@ -33,7 +33,7 @@ private:
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        _exit(1);
+        exit(1);
     }
 
     N* this_obj = new N(5);
