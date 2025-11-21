@@ -1,6 +1,6 @@
 ## LEVEL 6 HELP
 
-the level5 binary make call to printf with format directly used in, without any protection which make it vulnerable, we just need to know where we can access memory throught the print and exploit it to edit the call function to n instead of m
+the level6 binary make call to printf with format directly used in, without any protection which make it vulnerable, we just need to know where we can access memory throught the print and exploit it to edit the call function to n instead of m
 
 ### USAGE
 
