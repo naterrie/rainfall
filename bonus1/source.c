@@ -4,8 +4,8 @@
 
 int main(int argc, char **argv)
 {
-    int local_var = 0;
     char buffer[40];
+    int local_var = 0;
 
     local_var = atoi(argv[1]);
     if (local_var < 10)
