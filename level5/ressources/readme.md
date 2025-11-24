@@ -25,3 +25,7 @@ next the binary call exit function.
 - `%134513824d` : this part of the format string writes the value. This value + 4 corresponds to the address of the `function_o` function which call `system('/bin/sh')`.
 
 - `%4$n` : this writes the number of bytes written so far
+
+- `; cat -` : this allows to append a newline character at the end of the input, which is required by fgets.
+
+- `()` : this construct allows to run multiple commands in a single bash command line.
