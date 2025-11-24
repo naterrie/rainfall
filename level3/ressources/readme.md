@@ -22,7 +22,7 @@ the printf call use the format string contained in the buffer, leading to a form
 
 ### COMMAND EXPLANATION
 
-- `[m global addr]` : replace this with the address of the global variable `m` in little endian format (you can find it using gdb or objdump)
+- `[m global addr]` : replace this with the address of the global variable `m` in little endian format (you can find it using gdb or objdump) the address used is `\x8c\x98\x04\x08`
 
 - `a*60` : padding to reach the position of the format string that will write to the address of `m`
 

