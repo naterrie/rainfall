@@ -49,8 +49,8 @@ Use the following as a starting point. Replace placeholders:
 
 ## USED parameters
 
-`PTR_OFFSET` = 20
+`PTR_OFFSET` = `20`
 
-`EXIT_GOT_ADDR_in_little_endian` = \x28\x99\x04\x08
+`EXIT_GOT_ADDR_in_little_endian` = `\x28\x99\x04\x08`
 
-`FUNC_M_ADDR_in_little_endian` = \xf4\x84\x04\x08
+`FUNC_M_ADDR_in_little_endian` = `\xf4\x84\x04\x08`
