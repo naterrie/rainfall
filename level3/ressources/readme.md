@@ -27,3 +27,9 @@ the printf call use the format string contained in the buffer, leading to a form
 - `a*60` : padding to reach the position of the format string that will write to the address of `m`
 
 - `%4$n` : write the number of bytes written so far to the address of `m`, setting it to a non-zero value to bypass any checks in
+
+- `cat -` : don't close the stdin after the command execution
+
+- `()` : the scope to execute the command `cat` with result of `python`
+
+
